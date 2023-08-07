@@ -13,7 +13,7 @@ steps:
     displayName: 'npm ci'
   - script: npx playwright install --with-deps
     displayName: 'Install Playwright browsers'
-  - script: set CI=true && npx playwright test
+  - script: export CI=true && npx playwright test
     displayName: 'Run Playwright tests'
   - task: PublishTestResults@2
     displayName: 'Publish test results'
