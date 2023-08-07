@@ -20,7 +20,7 @@ test.describe('Login test', () => {
     await page.getByTestId('login-input').blur(); //unfocuse
 
     await expect(page.getByTestId('error-login-id')).toHaveText(
-      `identyfikator ma min. 8 znaków`,
+      `identyfikator ma min. 8 znakówfjsdgkf`,
     );
   });
 });
